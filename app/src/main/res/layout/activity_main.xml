@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextureView
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="FOTO"
+            android:textColor="#B8D8A0"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MODO: FOTO" />
+
+        <Button
+            android:id="@+id/btnQuality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NORMAL" />
+
+        <Button
+            android:id="@+id/btnShutter"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="12dp"
+            android:text="SCATTA" />
+    </LinearLayout>
+</LinearLayout>
